@@ -45,6 +45,9 @@ About the techniques to exploit SQL injection flaws there are five commons techn
 - Out-of-band: technique used to retrieve data using a different channel (e.g., make a HTTP connection to send the results to a web server).
 - Time delay: use database commands (e.g. sleep) to delay answers in conditional queries. It is useful when attacker doesn’t have some kind of answer (result, output, or error) from the application.
 
+![Screenshot 2025-04-23 142449](https://github.com/user-attachments/assets/33137e8a-f3a5-4549-aba4-4a1f32bf0ec8)
+
+
 ## Test Objectives
 
 SQL Injection testing allows the tester to identify and exploit issues pertaining to query inputs where secure practices are not properly implemented.
@@ -82,6 +85,9 @@ varchar value 'test' to a column of data type int.
 Monitor all the responses from the web server and have a look at the HTML/javascript source code. Sometimes the error is present inside them but for some reason (e.g. javascript error, HTML comments, etc) is not presented to the user. A full error message, like those in the examples, provides a wealth of information to the tester in order to mount a successful injection attack. However, applications often do not provide so much detail: a simple '500 Server Error' or a custom error page might be issued, meaning that we need to use blind injection techniques. In any case, it is very important to test each field separately: only one variable must vary while all the other remain constant, in order to precisely understand which parameters are vulnerable and which are not.
 
 ### Standard SQL Injection Testing
+
+![Screenshot 2025-04-23 142516](https://github.com/user-attachments/assets/4b0c2c15-d02c-4cc2-b874-ffe3825c5306)
+
 
 #### Classic SQL Injection
 
